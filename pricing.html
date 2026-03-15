@@ -3,68 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing | Hausavy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Hausavy Pricing | Free checklist and guided seller plans</title>
+  <meta name="description" content="Compare Hausavy plans, including a free checklist and paid guided FSBO workflows. Use the calculator to estimate seller commission savings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="site-header" id="site-header"></header>
-  <main class="section">
-    <div class="container">
-      <div class="eyebrow">Pricing</div>
-      <h1 style="margin-top: 1rem; max-width: 15ch;">Simple tiers with a much more premium presentation.</h1>
-      <p class="lead">The pricing page now stands on its own instead of being buried on the homepage, which makes the whole experience feel more established.</p>
+<body data-page="pricing">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Hausavy</span></a>
+      <nav class="main-nav">
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="checklist.html">Free checklist</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary" href="process.html">Start selling</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
 
-      <div class="pricing-grid" style="margin-top: 2rem;">
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container narrow">
+        <span class="eyebrow">Pricing</span>
+        <h1>Start free, then upgrade when you want guided execution.</h1>
+        <p class="lead">The free plan gives homeowners a practical checklist. Paid tiers are for sellers who want a cleaner, more supported process without the full-agent price tag.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container pricing-grid">
         <article class="price-card">
-          <div class="kicker">Entry</div>
-          <h3 style="margin-top: 0.65rem;">MLS Launch</h3>
-          <div style="font-size: 2.7rem; font-weight: 800; margin-top: 0.8rem;">$399</div>
-          <p style="margin-top: 0.8rem;">For sellers who want a clean launch path.</p>
-          <ul class="clean-list">
-            <li><span class="check">✓</span><span>Listing setup</span></li>
-            <li><span class="check">✓</span><span>Seller dashboard</span></li>
-            <li><span class="check">✓</span><span>Email support</span></li>
+          <span class="plan-tag">Free</span>
+          <h2>Checklist</h2>
+          <div class="price-line"><strong>$0</strong><span>one-time</span></div>
+          <p>For homeowners who want to understand the FSBO path before committing.</p>
+          <ul class="check-list compact">
+            <li>Printable FSBO checklist</li>
+            <li>10-step overview</li>
+            <li>Basic prep and pricing tips</li>
+            <li>Savings calculator access</li>
           </ul>
-          <div class="cta-row"><a class="btn btn-secondary" href="get-started.html">Choose plan</a></div>
+          <a class="btn btn-secondary full-width" href="checklist.html">Download free checklist</a>
         </article>
 
         <article class="price-card featured">
-          <div class="kicker">Most popular</div>
-          <h3 style="margin-top: 0.65rem;">Guided Seller</h3>
-          <div style="font-size: 2.7rem; font-weight: 800; margin-top: 0.8rem;">$699</div>
-          <p style="margin-top: 0.8rem;">Best for homeowners who want more structure through the process.</p>
-          <ul class="clean-list">
-            <li><span class="check" style="background: rgba(255,255,255,0.16); color: white;">✓</span><span>Pricing guidance</span></li>
-            <li><span class="check" style="background: rgba(255,255,255,0.16); color: white;">✓</span><span>Offer comparison support</span></li>
-            <li><span class="check" style="background: rgba(255,255,255,0.16); color: white;">✓</span><span>Selling timeline assistance</span></li>
+          <span class="plan-tag">Most popular</span>
+          <h2>Guided Seller</h2>
+          <div class="price-line"><strong>$149</strong><span>one-time</span></div>
+          <p>For serious sellers who want a step-by-step digital workflow and clearer execution.</p>
+          <ul class="check-list compact">
+            <li>Everything in Free</li>
+            <li>Full 10-step guided seller flow</li>
+            <li>Room-by-room prep checklist</li>
+            <li>Offer comparison tracker</li>
+            <li>Timeline and deadline prompts</li>
           </ul>
-          <div class="cta-row"><a class="btn btn-secondary" href="get-started.html">Choose plan</a></div>
+          <a class="btn btn-primary full-width" href="process.html">Open guided flow</a>
         </article>
 
         <article class="price-card">
-          <div class="kicker">Full support</div>
-          <h3 style="margin-top: 0.65rem;">Guided Close</h3>
-          <div style="font-size: 2.7rem; font-weight: 800; margin-top: 0.8rem;">$1,199</div>
-          <p style="margin-top: 0.8rem;">For sellers who want deeper transaction support.</p>
-          <ul class="clean-list">
-            <li><span class="check">✓</span><span>Transaction coordination</span></li>
-            <li><span class="check">✓</span><span>Offer review</span></li>
-            <li><span class="check">✓</span><span>Closing checklist</span></li>
+          <span class="plan-tag">Premium</span>
+          <h2>Seller Plus</h2>
+          <div class="price-line"><strong>$349</strong><span>one-time</span></div>
+          <p>For higher-value listings where structure, polish, and confidence matter more.</p>
+          <ul class="check-list compact">
+            <li>Everything in Guided Seller</li>
+            <li>Premium templates and scripts</li>
+            <li>Showing prep toolkit</li>
+            <li>Negotiation playbook</li>
+            <li>Closing checklist pack</li>
           </ul>
-          <div class="cta-row"><a class="btn btn-secondary" href="get-started.html">Choose plan</a></div>
+          <a class="btn btn-secondary full-width" href="process.html">Preview premium flow</a>
         </article>
       </div>
-    </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split-layout">
+        <div>
+          <span class="eyebrow">Seller savings calculator</span>
+          <h2>Estimate what full commission could cost on your sale</h2>
+          <p>Typical combined commissions often land around 5% to 6%, though they are negotiated and can vary by market and structure. This calculator gives a clean benchmark for comparison.</p>
+          <div class="calculator-card">
+            <label for="homeValueInput" class="field-label">Expected sale price</label>
+            <input id="homeValueInput" type="number" min="100000" step="10000" value="1000000" />
+            <label for="planCommission" class="field-label">Commission benchmark</label>
+            <select id="planCommission">
+              <option value="0.05">5.0%</option>
+              <option value="0.055" selected>5.5%</option>
+              <option value="0.06">6.0%</option>
+            </select>
+            <div class="results-grid">
+              <div class="result-box">
+                <span>Commission benchmark</span>
+                <strong id="fullCommissionCost">$55,000</strong>
+              </div>
+              <div class="result-box">
+                <span>Savings after Guided Seller plan</span>
+                <strong id="guidedSavings">$54,851</strong>
+              </div>
+              <div class="result-box">
+                <span>Savings after Seller Plus plan</span>
+                <strong id="premiumSavings">$54,651</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-card tall-image">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80" alt="Bright luxury home interior" />
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer" id="site-footer"></footer>
-  <script src="app.js"></script>
-  <script>
-    renderSharedNav('pricing');
-    renderSharedFooter();
-  </script>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span>Hausavy</span></a>
+        <p>FSBO guidance for homeowners who want better tools before paying full commission.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="process.html">Guided flow</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="checklist.html">Free checklist</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

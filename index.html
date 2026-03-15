@@ -3,87 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hausavy | Sell your home with more control</title>
-  <meta name="description" content="A premium self-guided platform that helps homeowners sell with confidence, keep more equity, and move through the process one simple step at a time." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Hausavy | Sell your home without paying full commission</title>
+  <meta name="description" content="Hausavy helps homeowners sell their own home with a guided step-by-step FSBO process, a free checklist, savings calculator, and a polished seller workflow." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="site-header" id="site-header"></header>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">H</span>
+        <span>Hausavy</span>
+      </a>
+      <nav class="main-nav">
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="checklist.html">Free checklist</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary" href="process.html">Start selling</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero-home">
       <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">For-sale-by-owner, made simple</span>
+          <h1>Sell your home yourself with a clear step-by-step plan.</h1>
+          <p class="lead">Skip the overwhelm. Hausavy gives first-time sellers a clean, guided FSBO process, a free checklist, pricing tools, and a realistic view of what you could save.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="process.html">Try the 10-step flow</a>
+            <a class="btn btn-secondary" href="checklist.html">Get the free checklist</a>
+          </div>
+          <div class="stats-row">
+            <div class="stat-pill"><strong>10</strong><span>guided seller steps</span></div>
+            <div class="stat-pill"><strong>Free</strong><span>starter checklist</span></div>
+            <div class="stat-pill"><strong>5%–6%</strong><span>typical full commission benchmark</span></div>
+          </div>
+        </div>
+        <div class="hero-card glass-card">
+          <div class="panel-head">
+            <span class="eyebrow">Estimate your home value</span>
+            <h2>See a rough value and potential commission savings</h2>
+          </div>
+          <div class="search-shell">
+            <label for="addressInput" class="field-label">Property address</label>
+            <div class="search-box">
+              <input id="addressInput" type="text" placeholder="Start typing an address" autocomplete="off" />
+              <button id="estimateButton" class="btn btn-primary" type="button">Estimate</button>
+            </div>
+            <div id="suggestions" class="suggestions"></div>
+            <p class="helper-text">Prototype mode: this demo uses seeded addresses and valuation ranges. For a live launch, connect Google Places Autocomplete and a property valuation data source.</p>
+          </div>
+          <div class="estimator-shell">
+            <div class="value-card">
+              <span>Estimated home value</span>
+              <strong id="estimatedValue">$1,250,000</strong>
+            </div>
+            <div class="slider-row">
+              <div>
+                <label for="commissionRate" class="field-label">Commission benchmark</label>
+                <select id="commissionRate">
+                  <option value="0.05">5.0%</option>
+                  <option value="0.055" selected>5.5%</option>
+                  <option value="0.06">6.0%</option>
+                </select>
+              </div>
+              <div class="savings-card accent-card">
+                <span>Potential commission savings</span>
+                <strong id="savingsValue">$68,750</strong>
+              </div>
+            </div>
+            <div class="map-frame" id="mapFrame"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">What Hausavy helps you do</span>
+          <h2>The FSBO process, broken into doable steps</h2>
+          <p>Selling without a listing agent does not mean winging it. The workflow below walks homeowners through pricing, prep, paperwork, showings, negotiation, and closing.</p>
+        </div>
+        <div class="feature-grid three-up">
+          <article class="feature-card">
+            <h3>Price confidently</h3>
+            <p>Use comps, condition, and demand to choose a competitive list price instead of guessing.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Market like a pro</h3>
+            <p>Get your listing assets, photos, description, and launch plan organized before you go live.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Close with less chaos</h3>
+            <p>Track offers, disclosures, contingencies, and deadlines so nothing important slips.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split-layout">
         <div>
-          <div class="eyebrow">Luxury feel. No agent-driven overwhelm.</div>
-          <h1>Sell your home with more control and less friction.</h1>
-          <p class="lead">Hausavy gives modern homeowners a polished step-by-step selling experience without dropping every task on them at once. Start with the value, then move forward one guided step at a time.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="get-started.html">Let's get started</a>
-            <a class="btn btn-secondary" href="about.html">See why homeowners choose us</a>
-          </div>
-          <div class="hero-mini-list">
-            <div><span class="check">✓</span><span>Premium multi-page experience that feels closer to a modern SaaS product than a generic FSBO website.</span></div>
-            <div><span class="check">✓</span><span>Focused intake flow that only reveals one step at a time for a calmer, higher-converting experience.</span></div>
-            <div><span class="check">✓</span><span>Lead capture designed to connect with email notifications, a database, and location-based listing insights.</span></div>
-          </div>
+          <span class="eyebrow">Why owners use it</span>
+          <h2>Designed for first-time sellers who want control without feeling lost</h2>
+          <ul class="check-list">
+            <li>No sign-in wall blocking the process flow</li>
+            <li>Free checklist for people still deciding</li>
+            <li>Paid guided workflow for real execution</li>
+            <li>Savings calculator tied to estimated sale price</li>
+            <li>Built to explain the process in plain language</li>
+          </ul>
+          <a class="btn btn-primary" href="pricing.html">Compare plans</a>
         </div>
-
-        <div class="image-card">
-          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=2000&q=80" alt="Luxury modern home exterior" />
-          <div class="floating-card">
-            <div class="kicker">A cleaner first impression</div>
-            <h3 style="margin-top: 0.4rem;">Lead with confidence, not complexity.</h3>
-            <p class="small" style="margin-top: 0.55rem;">The homepage focuses on the value proposition only, so visitors are not hit with all 10 selling steps before they are ready.</p>
-          </div>
+        <div class="image-card tall-image">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80" alt="Modern luxury home exterior" />
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container cards-3">
-        <article class="panel">
-          <div class="kicker">Luxury UX</div>
-          <h3 style="margin-top: 0.55rem;">More editorial, less template.</h3>
-          <p style="margin-top: 0.75rem;">Refined spacing, elegant imagery, and a multi-page structure make the site feel credible from the first click.</p>
-        </article>
-        <article class="panel">
-          <div class="kicker">Better flow</div>
-          <h3 style="margin-top: 0.55rem;">One step shown at a time.</h3>
-          <p style="margin-top: 0.75rem;">The signup experience reduces friction by pacing the user through their details instead of displaying the full journey up front.</p>
-        </article>
-        <article class="panel">
-          <div class="kicker">Smarter context</div>
-          <h3 style="margin-top: 0.55rem;">Neighborhood-aware recommendations.</h3>
-          <p style="margin-top: 0.75rem;">The demo flow can look up nearby schools, parks, and grocery anchors to enrich your listing narrative from the entered address.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container cta-banner">
-        <div class="split-grid">
-          <div>
-            <div class="eyebrow">Designed for modern sellers</div>
-            <h2 style="margin-top: 1rem;">A clear path from first click to live listing.</h2>
-            <p class="lead">Separate About, Pricing, Contact, and How It Works pages help the brand feel established and trustworthy instead of like a single landing page trying to do everything.</p>
-          </div>
-          <div class="cta-row" style="justify-content: flex-end; align-items: center;">
-            <a class="btn btn-primary" href="how-it-works.html">View the process</a>
-            <a class="btn btn-secondary" href="pricing.html">See pricing</a>
-          </div>
+    <section class="section cta-band">
+      <div class="container cta-shell">
+        <div>
+          <span class="eyebrow">Start free</span>
+          <h2>Download the checklist or go straight into the guided seller flow.</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-secondary" href="checklist.html">Free checklist</a>
+          <a class="btn btn-primary" href="process.html">Open 10-step flow</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="site-footer"></footer>
-  <script src="app.js"></script>
-  <script>
-    renderSharedNav('home');
-    renderSharedFooter();
-  </script>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span>Hausavy</span></a>
+        <p>Hausavy is a polished FSBO website prototype for homeowners who want to sell with more control and less commission pressure.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="process.html">Guided flow</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="checklist.html">Free checklist</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

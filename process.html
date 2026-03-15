@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Hausavy</title>
-  <meta name="description" content="Learn the Hausavy concept: a modern, homeowner-friendly website for selling without a traditional listing agent." />
+  <title>Guided Seller Flow | Hausavy</title>
+  <meta name="description" content="Walk through the Hausavy 10-step guided FSBO seller process without a sign-in wall." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-page="process">
   <header class="site-header">
     <div class="container nav-shell">
       <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Hausavy</span></a>
@@ -28,21 +28,33 @@
   <main>
     <section class="page-hero compact-hero">
       <div class="container narrow">
-        <span class="eyebrow">About</span>
-        <h1>A cleaner FSBO experience for homeowners who want control</h1>
-        <p class="lead">Hausavy is positioned as a modern alternative for sellers who do not want the traditional full-listing-agent path but still want structure, clarity, and a more premium digital experience.</p>
+        <span class="eyebrow">Guided seller flow</span>
+        <h1>One step at a time, without a sign-in wall</h1>
+        <p class="lead">This prototype intentionally shows one step at a time so the process feels approachable instead of overwhelming.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split-layout">
-        <div>
-          <h2>What this concept is trying to solve</h2>
-          <p>Most homeowners do not know where to start with FSBO. They are either handed generic advice or forced into a system that feels too risky to trust. Hausavy reframes the process into a guided sequence with a more approachable user experience.</p>
-          <p>The concept is part education, part workflow, and part savings story. It helps homeowners understand what selling themselves could look like while keeping the product premium and conversion-focused.</p>
-        </div>
-        <div class="image-card tall-image">
-          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80" alt="High-end home interior with large windows" />
+      <div class="container wizard-shell">
+        <aside class="wizard-side">
+          <div class="progress-ring-shell">
+            <div class="progress-ring"><span id="stepCounter">1 / 10</span></div>
+          </div>
+          <h2 id="stepTitleSide">Set your sale strategy</h2>
+          <p id="stepSummarySide">Clarify your timing, goals, and constraints before you start making tactical decisions.</p>
+        </aside>
+        <div class="wizard-main glass-card">
+          <span class="eyebrow" id="stepEyebrow">Step 1</span>
+          <h2 id="stepTitle">Set your sale strategy</h2>
+          <p id="stepBody">Choose your ideal closing window, your walk-away number, whether you need a rent-back, and how much work you want to do yourself versus outsource.</p>
+          <div class="task-list-shell">
+            <h3>Key actions</h3>
+            <ul id="taskList" class="check-list"></ul>
+          </div>
+          <div class="wizard-actions">
+            <button id="prevStep" class="btn btn-secondary" type="button">Back</button>
+            <button id="nextStep" class="btn btn-primary" type="button">Next step</button>
+          </div>
         </div>
       </div>
     </section>
@@ -52,7 +64,7 @@
     <div class="container footer-grid">
       <div>
         <a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span>Hausavy</span></a>
-        <p>Built for first-time and value-conscious sellers who want a more guided FSBO path.</p>
+        <p>A cleaner seller flow for homeowners navigating FSBO on their own terms.</p>
       </div>
       <div>
         <h4>Explore</h4>

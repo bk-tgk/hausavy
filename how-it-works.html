@@ -3,54 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How It Works | Hausavy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>How it works | Hausavy</title>
+  <meta name="description" content="See the 10-step Hausavy FSBO process for homeowners selling without a traditional listing agent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" id="site-header"></header>
-  <main class="section">
-    <div class="container story-grid">
-      <div>
-        <div class="eyebrow">How it works</div>
-        <h1 style="margin-top: 1rem;">The full process exists behind the scenes. The user only feels the next step.</h1>
-        <p class="lead">This page explains the product story, while the actual signup flow shows only one screen at a time so the seller never feels buried under a ten-step process.</p>
-      </div>
-      <div class="image-card">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2000&q=80" alt="Minimal luxury dining area" />
-      </div>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Hausavy</span></a>
+      <nav class="main-nav">
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="checklist.html">Free checklist</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary" href="process.html">Start selling</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
     </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <span class="eyebrow">The process</span>
+        <h1>A simple 10-step FSBO workflow for real homeowners</h1>
+        <p class="lead">The goal is not to turn owners into agents. It is to help them move through the sale in the right order, with the right questions, without feeling lost.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container steps-grid">
+        <article class="step-card"><span>01</span><h3>Set your sale strategy</h3><p>Define your timing, minimum acceptable price, moving plan, and whether you want to offer buyer-agent compensation.</p></article>
+        <article class="step-card"><span>02</span><h3>Estimate value and review comps</h3><p>Study nearby sold homes, current competition, condition differences, and market momentum before setting a target list price.</p></article>
+        <article class="step-card"><span>03</span><h3>Prepare the home</h3><p>Declutter, deep clean, repair obvious issues, and decide what staging or cosmetic upgrades will improve appeal.</p></article>
+        <article class="step-card"><span>04</span><h3>Create the listing package</h3><p>Write the listing description, gather measurements, features, disclosures, photos, and neighborhood highlights.</p></article>
+        <article class="step-card"><span>05</span><h3>Launch and market</h3><p>Publish the listing, share it through major channels, and make sure inquiries get a fast, professional response.</p></article>
+        <article class="step-card"><span>06</span><h3>Schedule showings</h3><p>Coordinate tours, set rules for access, and prepare a clean showing routine that works around your life.</p></article>
+        <article class="step-card"><span>07</span><h3>Review offers</h3><p>Compare price, contingencies, financing strength, closing timeline, and risk instead of looking only at the headline number.</p></article>
+        <article class="step-card"><span>08</span><h3>Negotiate and accept</h3><p>Counter with intention, document changes clearly, and know what terms matter most to protect your outcome.</p></article>
+        <article class="step-card"><span>09</span><h3>Track escrow milestones</h3><p>Monitor inspections, appraisal, contingency removals, disclosures, and requests that arise once you are in contract.</p></article>
+        <article class="step-card"><span>10</span><h3>Close and hand off</h3><p>Confirm final docs, transfer logistics, utilities, keys, and the last details that turn a contract into a completed sale.</p></article>
+      </div>
+    </section>
   </main>
 
-  <section class="section">
-    <div class="container cards-3">
-      <article class="panel"><h3>1. Enter seller details</h3><p style="margin-top: 0.65rem;">Collect first name, last name, phone, home address, and email in a clean conversion-first flow.</p></article>
-      <article class="panel"><h3>2. Enrich with local context</h3><p style="margin-top: 0.65rem;">Use the home address to generate nearby schools, grocery anchors, and notable lifestyle callouts.</p></article>
-      <article class="panel"><h3>3. Guide the next action</h3><p style="margin-top: 0.65rem;">Once a lead is created, route them into listing preparation, pricing, media, disclosures, and launch support.</p></article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container cta-banner">
-      <div class="split-grid">
-        <div>
-          <div class="kicker">Why this matters</div>
-          <h2 style="margin-top: 0.8rem;">Showing one step at a time reduces overwhelm and keeps conversion high.</h2>
-        </div>
-        <div class="cta-row" style="justify-content: flex-end;">
-          <a class="btn btn-primary" href="get-started.html">Try the guided flow</a>
-        </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span>Hausavy</span></a>
+        <p>Guided FSBO steps with a cleaner path from prep to closing.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="process.html">Guided flow</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="checklist.html">Free checklist</a>
+        <a href="about.html">About</a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <footer class="site-footer" id="site-footer"></footer>
-  <script src="app.js"></script>
-  <script>
-    renderSharedNav('how');
-    renderSharedFooter();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
