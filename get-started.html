@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Started | Hausavy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <main class="section">
+    <div class="container">
+      <div class="form-shell">
+        <div class="wizard-top">
+          <div>
+            <div class="eyebrow">Guided signup</div>
+            <h2 style="margin-top: 0.8rem;">Tell us about you and your property.</h2>
+          </div>
+          <div class="wizard-status" id="wizardStatus">Step 1</div>
+        </div>
+        <p class="lead" style="font-size: 1rem; max-width: 38rem;">The flow intentionally reveals one screen at a time so the experience feels lighter and more premium.</p>
+        <div class="progress"><span id="progressBar"></span></div>
+
+        <div class="notice">The front end is wired to submit to <strong>/api/signup</strong>. The included backend starter handles email delivery and lead storage once deployed.</div>
+
+        <form id="signupWizard">
+          <section class="form-step active">
+            <div class="form-grid">
+              <div>
+                <label for="firstName">First name</label>
+                <input id="firstName" name="firstName" required placeholder="First name" />
+              </div>
+              <div>
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" required placeholder="Last name" />
+              </div>
+            </div>
+          </section>
+
+          <section class="form-step">
+            <div class="form-grid">
+              <div>
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" required placeholder="(555) 555-5555" />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" required placeholder="name@email.com" />
+              </div>
+            </div>
+          </section>
+
+          <section class="form-step">
+            <div class="form-grid single">
+              <div>
+                <label for="address">Home address</label>
+                <input id="address" name="address" required placeholder="123 Main St, City, State" />
+              </div>
+            </div>
+            <div class="inline-note hidden" id="addressNote"></div>
+            <div id="recommendations"></div>
+          </section>
+
+          <section class="form-step">
+            <div class="form-grid single">
+              <div>
+                <label for="sellerGoals">What do you want help with first?</label>
+                <select id="sellerGoals" name="sellerGoals" required>
+                  <option value="">Select one</option>
+                  <option>Pricing guidance</option>
+                  <option>MLS listing launch</option>
+                  <option>Offer review support</option>
+                  <option>Full transaction support</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-grid single" style="margin-top: 1rem;">
+              <div>
+                <label for="notes">Anything else we should know?</label>
+                <textarea id="notes" name="notes" rows="5" placeholder="Optional notes"></textarea>
+              </div>
+            </div>
+          </section>
+
+          <div class="wizard-actions">
+            <button class="btn btn-secondary hidden" id="prevBtn" type="button">Back</button>
+            <div style="margin-left: auto; display: flex; gap: 0.8rem;">
+              <button class="btn btn-primary" id="nextBtn" type="button">Continue</button>
+              <button class="btn btn-primary hidden" id="submitBtn" type="submit">Complete signup</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="confirmation" class="hidden" style="margin-top: 1rem;"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="app.js"></script>
+  <script>
+    renderSharedNav('start');
+    renderSharedFooter();
+    initWizard();
+  </script>
+</body>
+</html>

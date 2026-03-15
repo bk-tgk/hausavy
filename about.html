@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Hausavy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+  <main class="section">
+    <div class="container about-grid">
+      <div>
+        <div class="eyebrow">About us</div>
+        <h1 style="margin-top: 1rem;">Built to make self-selling feel elevated, not intimidating.</h1>
+        <p class="lead">Hausavy is positioned like a modern, design-conscious platform for homeowners who want a polished process without giving away a full listing commission. The experience is intentionally premium, calm, and easy to trust.</p>
+        <div class="cards-3" style="margin-top: 2rem; grid-template-columns: 1fr;">
+          <article class="panel">
+            <h3>What makes the brand feel more professional</h3>
+            <p style="margin-top: 0.75rem;">Dedicated pages for About, Pricing, Contact, and How It Works support trust and make the information architecture feel closer to a real software product.</p>
+          </article>
+          <article class="panel">
+            <h3>What makes the user flow stronger</h3>
+            <p style="margin-top: 0.75rem;">The call to action on the homepage only invites the user into the journey. Once they click through, the intake flow handles the selling process progressively so the experience never feels heavy.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80" alt="Clean luxury living room" />
+        <div class="floating-card">
+          <div class="kicker">Brand direction</div>
+          <p class="small" style="margin-top: 0.5rem;">Warm neutrals, editorial photography, rounded surfaces, and restrained green accents help the site feel premium without leaning into dated real-estate clichés.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container cards-4">
+      <article class="metric-card">
+        <div class="kicker">Design principle</div>
+        <h3 style="margin-top: 0.6rem;">Clarity first</h3>
+        <p style="margin-top: 0.65rem;">Every page has a distinct purpose and a single next step.</p>
+      </article>
+      <article class="metric-card">
+        <div class="kicker">Design principle</div>
+        <h3 style="margin-top: 0.6rem;">Premium trust</h3>
+        <p style="margin-top: 0.65rem;">Photography and layout should feel like luxury hospitality or fintech, not a brochure site.</p>
+      </article>
+      <article class="metric-card">
+        <div class="kicker">Design principle</div>
+        <h3 style="margin-top: 0.6rem;">Fast action</h3>
+        <p style="margin-top: 0.65rem;">Clear buttons and shorter screens help visitors keep momentum.</p>
+      </article>
+      <article class="metric-card">
+        <div class="kicker">Design principle</div>
+        <h3 style="margin-top: 0.6rem;">Future-ready</h3>
+        <p style="margin-top: 0.65rem;">The front end is structured so backend services can plug in cleanly.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="app.js"></script>
+  <script>
+    renderSharedNav('about');
+    renderSharedFooter();
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hausavy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+  <main class="section">
+    <div class="container split-grid">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h1 style="margin-top: 1rem;">A dedicated contact page makes the brand feel real.</h1>
+        <p class="lead">Instead of burying everything in one page, this page can handle investor questions, support, listing questions, and partnership outreach.</p>
+        <div class="cards-3" style="grid-template-columns: 1fr; margin-top: 2rem;">
+          <article class="panel"><h3>Seller support</h3><p style="margin-top: 0.6rem;">hello@hausavy.com</p></article>
+          <article class="panel"><h3>Partnerships</h3><p style="margin-top: 0.6rem;">partners@hausavy.com</p></article>
+          <article class="panel"><h3>Office hours</h3><p style="margin-top: 0.6rem;">Mon–Fri, 9 AM to 6 PM</p></article>
+        </div>
+      </div>
+
+      <div class="form-shell">
+        <div class="kicker">Send a message</div>
+        <div class="form-grid single" style="margin-top: 1rem;">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" placeholder="Your name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="name@email.com" />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your listing"></textarea>
+          </div>
+          <div class="notice">This static front-end page is ready to be connected to the same backend pattern used for lead signup submissions.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="app.js"></script>
+  <script>
+    renderSharedNav('contact');
+    renderSharedFooter();
+  </script>
+</body>
+</html>
